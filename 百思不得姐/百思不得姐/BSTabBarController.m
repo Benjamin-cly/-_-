@@ -11,6 +11,7 @@
 #import "BSNewViewController.h"
 #import "BSFriendTrendsViewController.h"
 #import "BSMeViewController.h"
+#import "BSTabBar.h"
 
 @interface BSTabBarController ()
 
@@ -40,13 +41,8 @@
     [self setChildVc:[[BSFriendTrendsViewController alloc]init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     [self setChildVc:[[BSMeViewController alloc]init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
   
-    UIButton *publishButten = [UIButton buttonWithType:UIButtonTypeCustom];
-    [publishButten setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
-    [publishButten setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
-    publishButten.frame = CGRectMake(0, 0, publishButten.currentBackgroundImage.size.width, publishButten.currentBackgroundImage.size.height);
-    publishButten.center = CGPointMake(self.tabBar.frame.size.width * 0.5, self.tabBar.frame.size.height * 0.5);
 
-    [self.tabBar addSubview:publishButten];
+    [self setValue:[[BSTabBar alloc] init] forKey:@"tabBar"];
 
 }
 
