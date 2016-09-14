@@ -19,6 +19,7 @@
 		E0E8B4461D89528000726E76 /* BSFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8B4451D89528000726E76 /* BSFriendTrendsViewController.m */; };
 		E0E8B4491D89528B00726E76 /* BSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8B4481D89528B00726E76 /* BSMeViewController.m */; };
 		E0E8B44C1D8963EE00726E76 /* BSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8B44B1D8963EE00726E76 /* BSTabBar.m */; };
+		E0E8B4521D89B08400726E76 /* UIView+BSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8B4511D89B08400726E76 /* UIView+BSExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,9 @@
 		E0E8B4481D89528B00726E76 /* BSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMeViewController.m; sourceTree = "<group>"; };
 		E0E8B44A1D8963EE00726E76 /* BSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBar.h; sourceTree = "<group>"; };
 		E0E8B44B1D8963EE00726E76 /* BSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTabBar.m; sourceTree = "<group>"; };
+		E0E8B44F1D89AEC100726E76 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E0E8B4501D89B08400726E76 /* UIView+BSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BSExtension.h"; sourceTree = "<group>"; };
+		E0E8B4511D89B08400726E76 /* UIView+BSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BSExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				E0AA6DA11D880529009D10C5 /* BSTabBarController.m */,
 				E0E8B44A1D8963EE00726E76 /* BSTabBar.h */,
 				E0E8B44B1D8963EE00726E76 /* BSTabBar.m */,
+				E0E8B4501D89B08400726E76 /* UIView+BSExtension.h */,
+				E0E8B4511D89B08400726E76 /* UIView+BSExtension.m */,
 				E0AA6D6D1D87F8F4009D10C5 /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -140,6 +146,7 @@
 				E0AA6D791D87F8F4009D10C5 /* Assets.xcassets */,
 				E0AA6D7E1D87F8F4009D10C5 /* Info.plist */,
 				E0AA6D6E1D87F8F4009D10C5 /* main.m */,
+				E0E8B44F1D89AEC100726E76 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -300,6 +307,7 @@
 				E0E8B4491D89528B00726E76 /* BSMeViewController.m in Sources */,
 				E0AA6D721D87F8F4009D10C5 /* AppDelegate.m in Sources */,
 				E0E8B4401D89525100726E76 /* BSEssenceViewController.m in Sources */,
+				E0E8B4521D89B08400726E76 /* UIView+BSExtension.m in Sources */,
 				E0AA6D6F1D87F8F4009D10C5 /* main.m in Sources */,
 				E0E8B44C1D8963EE00726E76 /* BSTabBar.m in Sources */,
 				E0E8B4431D89526800726E76 /* BSNewViewController.m in Sources */,
