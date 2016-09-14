@@ -14,6 +14,10 @@
 		E0AA6D881D87F8F4009D10C5 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6D871D87F8F4009D10C5 /* _____Tests.m */; };
 		E0AA6D931D87F8F4009D10C5 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6D921D87F8F4009D10C5 /* _____UITests.m */; };
 		E0AA6DA21D880529009D10C5 /* BSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6DA11D880529009D10C5 /* BSTabBarController.m */; };
+		E0E8B4401D89525100726E76 /* BSEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8B43F1D89525100726E76 /* BSEssenceViewController.m */; };
+		E0E8B4431D89526800726E76 /* BSNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8B4421D89526800726E76 /* BSNewViewController.m */; };
+		E0E8B4461D89528000726E76 /* BSFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8B4451D89528000726E76 /* BSFriendTrendsViewController.m */; };
+		E0E8B4491D89528B00726E76 /* BSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8B4481D89528B00726E76 /* BSMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,14 @@
 		E0AA6D941D87F8F4009D10C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0AA6DA01D880529009D10C5 /* BSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBarController.h; sourceTree = "<group>"; };
 		E0AA6DA11D880529009D10C5 /* BSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTabBarController.m; sourceTree = "<group>"; };
+		E0E8B43E1D89525100726E76 /* BSEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSEssenceViewController.h; sourceTree = "<group>"; };
+		E0E8B43F1D89525100726E76 /* BSEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSEssenceViewController.m; sourceTree = "<group>"; };
+		E0E8B4411D89526800726E76 /* BSNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNewViewController.h; sourceTree = "<group>"; };
+		E0E8B4421D89526800726E76 /* BSNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNewViewController.m; sourceTree = "<group>"; };
+		E0E8B4441D89528000726E76 /* BSFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSFriendTrendsViewController.h; sourceTree = "<group>"; };
+		E0E8B4451D89528000726E76 /* BSFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSFriendTrendsViewController.m; sourceTree = "<group>"; };
+		E0E8B4471D89528B00726E76 /* BSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMeViewController.h; sourceTree = "<group>"; };
+		E0E8B4481D89528B00726E76 /* BSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,14 @@
 				E0AA6D711D87F8F4009D10C5 /* AppDelegate.m */,
 				E0AA6DA01D880529009D10C5 /* BSTabBarController.h */,
 				E0AA6DA11D880529009D10C5 /* BSTabBarController.m */,
+				E0E8B43E1D89525100726E76 /* BSEssenceViewController.h */,
+				E0E8B43F1D89525100726E76 /* BSEssenceViewController.m */,
+				E0E8B4411D89526800726E76 /* BSNewViewController.h */,
+				E0E8B4421D89526800726E76 /* BSNewViewController.m */,
+				E0E8B4441D89528000726E76 /* BSFriendTrendsViewController.h */,
+				E0E8B4451D89528000726E76 /* BSFriendTrendsViewController.m */,
+				E0E8B4471D89528B00726E76 /* BSMeViewController.h */,
+				E0E8B4481D89528B00726E76 /* BSMeViewController.m */,
 				E0AA6D6D1D87F8F4009D10C5 /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -271,8 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0AA6DA21D880529009D10C5 /* BSTabBarController.m in Sources */,
+				E0E8B4461D89528000726E76 /* BSFriendTrendsViewController.m in Sources */,
+				E0E8B4491D89528B00726E76 /* BSMeViewController.m in Sources */,
 				E0AA6D721D87F8F4009D10C5 /* AppDelegate.m in Sources */,
+				E0E8B4401D89525100726E76 /* BSEssenceViewController.m in Sources */,
 				E0AA6D6F1D87F8F4009D10C5 /* main.m in Sources */,
+				E0E8B4431D89526800726E76 /* BSNewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
