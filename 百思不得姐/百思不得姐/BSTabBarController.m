@@ -31,45 +31,32 @@
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
     
     //添加子控制器
-    UIViewController *vc01 = [[UIViewController alloc]init];
-    vc01.tabBarItem.title = @"精华";
-    vc01.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
-    vc01.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_essence_click_icon"];
-    
-    vc01.view.backgroundColor = [UIColor redColor];
-    [self addChildViewController:vc01];
-    
-    UIViewController *vc02 = [[UIViewController alloc]init];
-    vc02.tabBarItem.title = @"新帖";
-    vc02.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
-    vc02.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_new_click_icon"];
-    vc02.view.backgroundColor = [UIColor greenColor];
-    [self addChildViewController:vc02];
-    
-    UIViewController *vc03 = [[UIViewController alloc]init];
-    vc03.tabBarItem.title = @"关注";
-    vc03.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
-    vc03.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_friendTrends_click_icon"];
-    vc03.view.backgroundColor = [UIColor grayColor];
-    [self addChildViewController:vc03];
-    
-    UIViewController *vc04 = [[UIViewController alloc]init];
-    vc04.tabBarItem.title = @"我";
-    vc04.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
-    vc04.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_me_click_icon"];
-    vc04.view.backgroundColor = [UIColor yellowColor];
-    [self addChildViewController:vc04];
+    [self setChildVc:[[UIViewController alloc]init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    [self setChildVc:[[UIViewController alloc]init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setChildVc:[[UIViewController alloc]init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    [self setChildVc:[[UIViewController alloc]init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+  
 
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/**
+ *  子控制器初始化
+ *
+ *  @param vc            控制器类型
+ *  @param title         标题
+ *  @param image         图片
+ *  @param selectedImage 选中图片
+ */
+- (void)setChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
+{
+    //设置文字和图片,背景色
+    vc.tabBarItem.title = title;
+    vc.tabBarItem.image = [UIImage imageNamed:image];
+    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
+    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100.0 alpha:1.0];
+    //添加为子控制器
+    [self addChildViewController:vc];
+    
 }
-*/
 
 @end
