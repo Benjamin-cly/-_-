@@ -16,22 +16,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"我的";
+    
+    UIButton *setTagButten = [UIButton buttonWithType:UIButtonTypeCustom];
+    [setTagButten setBackgroundImage:[UIImage imageNamed:@"mine-setting-icon"] forState:UIControlStateNormal];
+    [setTagButten setBackgroundImage:[UIImage imageNamed:@"mine-setting-icon-click"] forState:UIControlStateHighlighted];
+    setTagButten.size = setTagButten.currentBackgroundImage.size;
+    [setTagButten addTarget:self action:@selector(setting) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *moonTagButten = [UIButton buttonWithType:UIButtonTypeCustom];
+    [moonTagButten setBackgroundImage:[UIImage imageNamed:@"mine-moon-icon"] forState:UIControlStateNormal];
+    [moonTagButten setBackgroundImage:[UIImage imageNamed:@"mine-moon-icon-click"] forState:UIControlStateHighlighted];
+    moonTagButten.size = moonTagButten.currentBackgroundImage.size;
+    [moonTagButten addTarget:self action:@selector(moon) forControlEvents:UIControlEventTouchUpInside];
+
+    self.navigationItem.rightBarButtonItems = @[
+                                            [[UIBarButtonItem alloc] initWithCustomView:setTagButten],
+                                            [[UIBarButtonItem alloc] initWithCustomView:moonTagButten]
+                                                ];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setting
+{
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)moon
+{
 }
-*/
-
 @end

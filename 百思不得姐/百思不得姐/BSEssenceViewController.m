@@ -19,14 +19,16 @@
     [super viewDidLoad];
     self.navigationItem.titleView = [[UIImageView alloc ] initWithImage:[UIImage imageNamed:@"MainTitle" ]];
     
-    UIButton *mainTagButten = [UIButton buttonWithType:UIButtonTypeCustom];
-    [mainTagButten setBackgroundImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
-    [mainTagButten setBackgroundImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateSelected];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:mainTagButten];
+    UIButton *essenceTagButten = [UIButton buttonWithType:UIButtonTypeCustom];
+    [essenceTagButten setBackgroundImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
+    [essenceTagButten setBackgroundImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
+    essenceTagButten.size = essenceTagButten.currentBackgroundImage.size;
+    [essenceTagButten addTarget:self action:@selector(gogo) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:essenceTagButten];
     
 }
 
-
-
+-(void)gogo{
+    NSLog(@"lalalal");
+}
 @end
