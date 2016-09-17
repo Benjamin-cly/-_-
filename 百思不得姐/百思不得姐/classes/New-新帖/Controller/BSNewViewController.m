@@ -19,6 +19,9 @@
     self.navigationItem.titleView = [[UIImageView alloc ] initWithImage:[UIImage imageNamed:@"MainTitle" ]];
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highlightedImage:@"MainTagSubIconClick" target:self action:@selector(newClick)];
+    //设置背景色
+    self.view.backgroundColor = BSGlogbalBgColor;
+    BSLogFunc;
 }
 
 -(void)newClick

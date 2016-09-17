@@ -9,6 +9,7 @@
 #import "BSTabBar.h"
 
 @interface BSTabBar()
+//发布按钮
 @property (weak, nonatomic)UIButton *publishButten;
 
 @end
@@ -20,6 +21,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         
+        //设置背景色
+        [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
+        //添加一个发布按钮
         UIButton *publishButten = [UIButton buttonWithType:UIButtonTypeCustom];
         [publishButten setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [publishButten setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
