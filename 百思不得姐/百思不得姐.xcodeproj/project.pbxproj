@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F4239FD8DC8DB84AAB5816F /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1D9E934CFAB1E5F4634931 /* libPods-百思不得姐.a */; };
 		E0AA6D781D87F8F4009D10C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0AA6D761D87F8F4009D10C5 /* Main.storyboard */; };
 		E0AA6D7A1D87F8F4009D10C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AA6D791D87F8F4009D10C5 /* Assets.xcassets */; };
 		E0AA6D881D87F8F4009D10C5 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6D871D87F8F4009D10C5 /* _____Tests.m */; };
 		E0AA6D931D87F8F4009D10C5 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6D921D87F8F4009D10C5 /* _____UITests.m */; };
+		E0CDF5CE1D913ADD001001E3 /* BSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CDF5CD1D913ADD001001E3 /* BSNavigationController.m */; };
 		E0EEAE0D1D8D7C5C0094847E /* BSEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEADE81D8D7C5C0094847E /* BSEssenceViewController.m */; };
 		E0EEAE0E1D8D7C5C0094847E /* BSFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEADEE1D8D7C5C0094847E /* BSFriendTrendsViewController.m */; };
 		E0EEAE0F1D8D7C5C0094847E /* BSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEADF41D8D7C5C0094847E /* BSMeViewController.m */; };
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C1D9E934CFAB1E5F4634931 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B931325EA2C9853E57382EB /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
+		C74538AF0F1697FAB580DBC9 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		E0AA6D6A1D87F8F4009D10C5 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AA6D771D87F8F4009D10C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0AA6D791D87F8F4009D10C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,8 @@
 		E0AA6D8E1D87F8F4009D10C5 /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AA6D921D87F8F4009D10C5 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		E0AA6D941D87F8F4009D10C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0CDF5CC1D913ADD001001E3 /* BSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNavigationController.h; sourceTree = "<group>"; };
+		E0CDF5CD1D913ADD001001E3 /* BSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNavigationController.m; sourceTree = "<group>"; };
 		E0EEADE71D8D7C5C0094847E /* BSEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSEssenceViewController.h; sourceTree = "<group>"; };
 		E0EEADE81D8D7C5C0094847E /* BSEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSEssenceViewController.m; sourceTree = "<group>"; };
 		E0EEADED1D8D7C5C0094847E /* BSFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -78,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4239FD8DC8DB84AAB5816F /* libPods-百思不得姐.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47A1274B22E448FDA775B482 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C74538AF0F1697FAB580DBC9 /* Pods-百思不得姐.debug.xcconfig */,
+				3B931325EA2C9853E57382EB /* Pods-百思不得姐.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E0AA6D611D87F8F4009D10C5 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +122,8 @@
 				E0AA6D861D87F8F4009D10C5 /* 百思不得姐Tests */,
 				E0AA6D911D87F8F4009D10C5 /* 百思不得姐UITests */,
 				E0AA6D6B1D87F8F4009D10C5 /* Products */,
+				47A1274B22E448FDA775B482 /* Pods */,
+				FB57BA3E5762ABF4C1456CBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -329,6 +348,8 @@
 			children = (
 				E0EEAE061D8D7C5C0094847E /* BSTabBarController.h */,
 				E0EEAE071D8D7C5C0094847E /* BSTabBarController.m */,
+				E0CDF5CC1D913ADD001001E3 /* BSNavigationController.h */,
+				E0CDF5CD1D913ADD001001E3 /* BSNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -342,6 +363,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FB57BA3E5762ABF4C1456CBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C1D9E934CFAB1E5F4634931 /* libPods-百思不得姐.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,9 +378,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0AA6D971D87F8F4009D10C5 /* Build configuration list for PBXNativeTarget "百思不得姐" */;
 			buildPhases = (
+				1436E5FA05A9D0F215E30134 /* [CP] Check Pods Manifest.lock */,
 				E0AA6D661D87F8F4009D10C5 /* Sources */,
 				E0AA6D671D87F8F4009D10C5 /* Frameworks */,
 				E0AA6D681D87F8F4009D10C5 /* Resources */,
+				E73065887468C682B2566274 /* [CP] Embed Pods Frameworks */,
+				D9C78BBAE08B7487A5C96B6D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -470,6 +502,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1436E5FA05A9D0F215E30134 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C78BBAE08B7487A5C96B6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E73065887468C682B2566274 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0AA6D661D87F8F4009D10C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -477,6 +557,7 @@
 			files = (
 				E0EEAE0D1D8D7C5C0094847E /* BSEssenceViewController.m in Sources */,
 				E0EEAE121D8D7C5C0094847E /* UIBarButtonItem+BSExtension.m in Sources */,
+				E0CDF5CE1D913ADD001001E3 /* BSNavigationController.m in Sources */,
 				E0EEAE0E1D8D7C5C0094847E /* BSFriendTrendsViewController.m in Sources */,
 				E0EEAE101D8D7C5C0094847E /* BSNewViewController.m in Sources */,
 				E0EEAE141D8D7C5C0094847E /* BSTabBarController.m in Sources */,
@@ -615,6 +696,7 @@
 		};
 		E0AA6D981D87F8F4009D10C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74538AF0F1697FAB580DBC9 /* Pods-百思不得姐.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -630,6 +712,7 @@
 		};
 		E0AA6D991D87F8F4009D10C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B931325EA2C9853E57382EB /* Pods-百思不得姐.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
