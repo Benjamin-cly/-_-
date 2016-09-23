@@ -13,6 +13,7 @@
 		E0AA6D881D87F8F4009D10C5 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6D871D87F8F4009D10C5 /* _____Tests.m */; };
 		E0AA6D931D87F8F4009D10C5 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6D921D87F8F4009D10C5 /* _____UITests.m */; };
 		E0CDF5CE1D913ADD001001E3 /* BSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CDF5CD1D913ADD001001E3 /* BSNavigationController.m */; };
+		E0E8C0D41D95342200437119 /* BSFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E8C0D31D95342200437119 /* BSFriendTrendsViewController.xib */; };
 		E0EEAE0D1D8D7C5C0094847E /* BSEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEADE81D8D7C5C0094847E /* BSEssenceViewController.m */; };
 		E0EEAE0E1D8D7C5C0094847E /* BSFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEADEE1D8D7C5C0094847E /* BSFriendTrendsViewController.m */; };
 		E0EEAE0F1D8D7C5C0094847E /* BSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEADF41D8D7C5C0094847E /* BSMeViewController.m */; };
@@ -58,6 +59,7 @@
 		E0AA6D941D87F8F4009D10C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0CDF5CC1D913ADD001001E3 /* BSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNavigationController.h; sourceTree = "<group>"; };
 		E0CDF5CD1D913ADD001001E3 /* BSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNavigationController.m; sourceTree = "<group>"; };
+		E0E8C0D31D95342200437119 /* BSFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSFriendTrendsViewController.xib; sourceTree = "<group>"; };
 		E0EEADE71D8D7C5C0094847E /* BSEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSEssenceViewController.h; sourceTree = "<group>"; };
 		E0EEADE81D8D7C5C0094847E /* BSEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSEssenceViewController.m; sourceTree = "<group>"; };
 		E0EEADED1D8D7C5C0094847E /* BSFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			children = (
 				E0EEADED1D8D7C5C0094847E /* BSFriendTrendsViewController.h */,
 				E0EEADEE1D8D7C5C0094847E /* BSFriendTrendsViewController.m */,
+				E0E8C0D31D95342200437119 /* BSFriendTrendsViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E8C0D41D95342200437119 /* BSFriendTrendsViewController.xib in Resources */,
 				E0AA6D7A1D87F8F4009D10C5 /* Assets.xcassets in Resources */,
 				E0AA6D781D87F8F4009D10C5 /* Main.storyboard in Resources */,
 			);

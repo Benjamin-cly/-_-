@@ -47,9 +47,20 @@
         btn.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+        [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+        // 修改导航栏左边的item
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn ];
-    }
-    
+        
+        // 隐藏tabbar
+        viewController.hidesBottomBarWhenPushed = YES;
+}
+    // 这句super的push要放在后面, 让viewController可以覆盖上面设置的leftBarButtonItem
     [super pushViewController:viewController animated:animated];
 }
+
+-(void)back
+{
+    [self popViewControllerAnimated:YES];
+}
+
 @end
