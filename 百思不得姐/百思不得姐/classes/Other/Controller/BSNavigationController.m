@@ -44,7 +44,7 @@
         [btn setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
 //        btn.size = CGSizeMake(70, 30);
         [btn sizeToFit];
-        btn.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
+        btn.contentEdgeInsets = UIEdgeInsetsMake(0, -30, 0, 0);
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
         [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];

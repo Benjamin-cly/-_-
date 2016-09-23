@@ -14,6 +14,8 @@
 		E0AA6D931D87F8F4009D10C5 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6D921D87F8F4009D10C5 /* _____UITests.m */; };
 		E0CDF5CE1D913ADD001001E3 /* BSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CDF5CD1D913ADD001001E3 /* BSNavigationController.m */; };
 		E0E8C0D41D95342200437119 /* BSFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E8C0D31D95342200437119 /* BSFriendTrendsViewController.xib */; };
+		E0E8C0D81D957C0E00437119 /* BSRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8C0D61D957C0E00437119 /* BSRecommendViewController.m */; };
+		E0E8C0D91D957C0E00437119 /* BSRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E8C0D71D957C0E00437119 /* BSRecommendViewController.xib */; };
 		E0EEAE0D1D8D7C5C0094847E /* BSEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEADE81D8D7C5C0094847E /* BSEssenceViewController.m */; };
 		E0EEAE0E1D8D7C5C0094847E /* BSFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEADEE1D8D7C5C0094847E /* BSFriendTrendsViewController.m */; };
 		E0EEAE0F1D8D7C5C0094847E /* BSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEADF41D8D7C5C0094847E /* BSMeViewController.m */; };
@@ -60,6 +62,9 @@
 		E0CDF5CC1D913ADD001001E3 /* BSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNavigationController.h; sourceTree = "<group>"; };
 		E0CDF5CD1D913ADD001001E3 /* BSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNavigationController.m; sourceTree = "<group>"; };
 		E0E8C0D31D95342200437119 /* BSFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		E0E8C0D51D957C0E00437119 /* BSRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSRecommendViewController.h; sourceTree = "<group>"; };
+		E0E8C0D61D957C0E00437119 /* BSRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSRecommendViewController.m; sourceTree = "<group>"; };
+		E0E8C0D71D957C0E00437119 /* BSRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSRecommendViewController.xib; sourceTree = "<group>"; };
 		E0EEADE71D8D7C5C0094847E /* BSEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSEssenceViewController.h; sourceTree = "<group>"; };
 		E0EEADE81D8D7C5C0094847E /* BSEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSEssenceViewController.m; sourceTree = "<group>"; };
 		E0EEADED1D8D7C5C0094847E /* BSFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -237,6 +242,9 @@
 				E0EEADED1D8D7C5C0094847E /* BSFriendTrendsViewController.h */,
 				E0EEADEE1D8D7C5C0094847E /* BSFriendTrendsViewController.m */,
 				E0E8C0D31D95342200437119 /* BSFriendTrendsViewController.xib */,
+				E0E8C0D51D957C0E00437119 /* BSRecommendViewController.h */,
+				E0E8C0D61D957C0E00437119 /* BSRecommendViewController.m */,
+				E0E8C0D71D957C0E00437119 /* BSRecommendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -484,6 +492,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E8C0D91D957C0E00437119 /* BSRecommendViewController.xib in Resources */,
 				E0E8C0D41D95342200437119 /* BSFriendTrendsViewController.xib in Resources */,
 				E0AA6D7A1D87F8F4009D10C5 /* Assets.xcassets in Resources */,
 				E0AA6D781D87F8F4009D10C5 /* Main.storyboard in Resources */,
@@ -559,6 +568,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E8C0D81D957C0E00437119 /* BSRecommendViewController.m in Sources */,
 				E0EEAE0D1D8D7C5C0094847E /* BSEssenceViewController.m in Sources */,
 				E0EEAE121D8D7C5C0094847E /* UIBarButtonItem+BSExtension.m in Sources */,
 				E0CDF5CE1D913ADD001001E3 /* BSNavigationController.m in Sources */,
