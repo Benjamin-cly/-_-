@@ -12,6 +12,7 @@
 #import "BSFriendTrendsViewController.h"
 #import "BSMeViewController.h"
 #import "BSTabBar.h"
+#import "BSNavigationController.h"
 
 @interface BSTabBarController ()
 
@@ -19,9 +20,8 @@
 
 @implementation BSTabBarController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
++(void)initialize
+{
     //通过设置tabbar的appearance 统一设置tabbar的文字属性
     //只要方法后面有带有 UI_APPEARANCE_SELECTOR  就可以通过appearance对象来统一设置
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
@@ -30,10 +30,16 @@
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
     selectedAttrs[NSFontAttributeName] = attrs[NSFontAttributeName];
     selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
-    
-    UITabBarItem *item = [UITabBarItem appearance];
+    //当使用BSTabBarController 是,appearance设置才会生效
+    UITabBarItem *item = [UITabBarItem appearanceWhenContainedInInstancesOfClasses:@[[BSTabBarController class]]];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+
+
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
     //添加子控制器
     [self setChildVc:[[BSEssenceViewController alloc]init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
@@ -62,9 +68,7 @@
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
     //添加为子控制器
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
-    //设置导航控制器的背景色
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    BSNavigationController *nav = [[BSNavigationController alloc]initWithRootViewController:vc];
     [self addChildViewController:nav];
     
 }
