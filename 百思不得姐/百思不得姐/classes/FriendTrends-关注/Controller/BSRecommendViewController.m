@@ -7,8 +7,8 @@
 //
 
 #import "BSRecommendViewController.h"
-#import <AFNetworking.h>
 #import <SVProgressHUD.h>
+#import <AFNetworking.h>
 
 @interface BSRecommendViewController ()
 
@@ -22,7 +22,18 @@
     self.title = @"推荐关注";
     //设置背景色
     self.view.backgroundColor = BSGlogbalBgColor;
+    //发送请求
     
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"a"] = @"category";
+    parameters[@"c"] = @"subscribe";
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
 }
 
 
