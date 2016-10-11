@@ -20,10 +20,15 @@
     [super viewDidLoad];
     
     self.title = @"推荐关注";
+    
     //设置背景色
     self.view.backgroundColor = BSGlogbalBgColor;
-    //发送请求
     
+    //添加指示器
+    [SVProgressHUD show];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    //发送请求
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"category";
     parameters[@"c"] = @"subscribe";
@@ -31,8 +36,10 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@",responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD dismiss];
         
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD showErrorWithStatus:@"加载推荐信息失败!"];
     }];
 }
 
