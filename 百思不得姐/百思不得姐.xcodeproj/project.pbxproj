@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F4239FD8DC8DB84AAB5816F /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1D9E934CFAB1E5F4634931 /* libPods-百思不得姐.a */; };
+		E062A0DA1DB0E3D200A3B2B2 /* BSRecommendType.m in Sources */ = {isa = PBXBuildFile; fileRef = E062A0D91DB0E3D200A3B2B2 /* BSRecommendType.m */; };
 		E0AA6D781D87F8F4009D10C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0AA6D761D87F8F4009D10C5 /* Main.storyboard */; };
 		E0AA6D7A1D87F8F4009D10C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AA6D791D87F8F4009D10C5 /* Assets.xcassets */; };
 		E0AA6D881D87F8F4009D10C5 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6D871D87F8F4009D10C5 /* _____Tests.m */; };
@@ -49,6 +50,8 @@
 		2C1D9E934CFAB1E5F4634931 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B931325EA2C9853E57382EB /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		C74538AF0F1697FAB580DBC9 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
+		E062A0D81DB0E3D200A3B2B2 /* BSRecommendType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSRecommendType.h; sourceTree = "<group>"; };
+		E062A0D91DB0E3D200A3B2B2 /* BSRecommendType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSRecommendType.m; sourceTree = "<group>"; };
 		E0AA6D6A1D87F8F4009D10C5 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AA6D771D87F8F4009D10C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0AA6D791D87F8F4009D10C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 		E0EEADEF1D8D7C5C0094847E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E062A0D81DB0E3D200A3B2B2 /* BSRecommendType.h */,
+				E062A0D91DB0E3D200A3B2B2 /* BSRecommendType.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -571,6 +576,7 @@
 				E0E8C0D81D957C0E00437119 /* BSRecommendViewController.m in Sources */,
 				E0EEAE0D1D8D7C5C0094847E /* BSEssenceViewController.m in Sources */,
 				E0EEAE121D8D7C5C0094847E /* UIBarButtonItem+BSExtension.m in Sources */,
+				E062A0DA1DB0E3D200A3B2B2 /* BSRecommendType.m in Sources */,
 				E0CDF5CE1D913ADD001001E3 /* BSNavigationController.m in Sources */,
 				E0EEAE0E1D8D7C5C0094847E /* BSFriendTrendsViewController.m in Sources */,
 				E0EEAE101D8D7C5C0094847E /* BSNewViewController.m in Sources */,

@@ -14,7 +14,25 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X6b-xR-njd" userLabel="左侧">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="DZ8-vz-GfL"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JJC-GN-Gzj"/>
+                        <outlet property="delegate" destination="-1" id="FMf-75-VOX"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="X6b-xR-njd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9qp-GO-hEF"/>
+                <constraint firstItem="X6b-xR-njd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eeb-Fd-n5k"/>
+                <constraint firstAttribute="bottom" secondItem="X6b-xR-njd" secondAttribute="bottom" id="uxF-pl-I6q"/>
+            </constraints>
         </view>
     </objects>
 </document>

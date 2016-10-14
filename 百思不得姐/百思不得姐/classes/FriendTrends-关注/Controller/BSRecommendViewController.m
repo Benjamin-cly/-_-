@@ -10,7 +10,7 @@
 #import <SVProgressHUD.h>
 #import <AFNetworking.h>
 
-@interface BSRecommendViewController ()
+@interface BSRecommendViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -42,6 +42,33 @@
         [SVProgressHUD showErrorWithStatus:@"加载推荐信息失败!"];
     }];
 }
+
+#pragma - <UITableViewDelegate>
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    return cell;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end
