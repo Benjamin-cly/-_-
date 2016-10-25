@@ -11,10 +11,13 @@
 		E062A0DA1DB0E3D200A3B2B2 /* BSRecommendType.m in Sources */ = {isa = PBXBuildFile; fileRef = E062A0D91DB0E3D200A3B2B2 /* BSRecommendType.m */; };
 		E081DBBD1DB4D68500ABFD60 /* BSRecommendTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E081DBBB1DB4D68500ABFD60 /* BSRecommendTypeCell.m */; };
 		E081DBBE1DB4D68500ABFD60 /* BSRecommendTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E081DBBC1DB4D68500ABFD60 /* BSRecommendTypeCell.xib */; };
+		E0A0B9471DBD75BE00292AF2 /* BSRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A0B9451DBD75BE00292AF2 /* BSRecommendUserCell.m */; };
+		E0A0B9481DBD75BE00292AF2 /* BSRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A0B9461DBD75BE00292AF2 /* BSRecommendUserCell.xib */; };
 		E0AA6D781D87F8F4009D10C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0AA6D761D87F8F4009D10C5 /* Main.storyboard */; };
 		E0AA6D7A1D87F8F4009D10C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AA6D791D87F8F4009D10C5 /* Assets.xcassets */; };
 		E0AA6D881D87F8F4009D10C5 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6D871D87F8F4009D10C5 /* _____Tests.m */; };
 		E0AA6D931D87F8F4009D10C5 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA6D921D87F8F4009D10C5 /* _____UITests.m */; };
+		E0BF8D9B1DBF71150036CDD8 /* BSRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF8D9A1DBF71150036CDD8 /* BSRecommendUser.m */; };
 		E0CDF5CE1D913ADD001001E3 /* BSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CDF5CD1D913ADD001001E3 /* BSNavigationController.m */; };
 		E0E8C0D41D95342200437119 /* BSFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E8C0D31D95342200437119 /* BSFriendTrendsViewController.xib */; };
 		E0E8C0D81D957C0E00437119 /* BSRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8C0D61D957C0E00437119 /* BSRecommendViewController.m */; };
@@ -29,6 +32,7 @@
 		E0EEAE141D8D7C5C0094847E /* BSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEAE071D8D7C5C0094847E /* BSTabBarController.m */; };
 		E0EEAE151D8D7C5C0094847E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEAE081D8D7C5C0094847E /* main.m */; };
 		E0EEAE161D8D7C5C0094847E /* BSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EEAE0C1D8D7C5C0094847E /* BSTabBar.m */; };
+		E0F314AA1DBA13ED00014923 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F314A91DBA13ED00014923 /* Foundation+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,9 @@
 		E081DBBA1DB4D68500ABFD60 /* BSRecommendTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSRecommendTypeCell.h; sourceTree = "<group>"; };
 		E081DBBB1DB4D68500ABFD60 /* BSRecommendTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSRecommendTypeCell.m; sourceTree = "<group>"; };
 		E081DBBC1DB4D68500ABFD60 /* BSRecommendTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSRecommendTypeCell.xib; sourceTree = "<group>"; };
+		E0A0B9441DBD75BE00292AF2 /* BSRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSRecommendUserCell.h; sourceTree = "<group>"; };
+		E0A0B9451DBD75BE00292AF2 /* BSRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSRecommendUserCell.m; sourceTree = "<group>"; };
+		E0A0B9461DBD75BE00292AF2 /* BSRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSRecommendUserCell.xib; sourceTree = "<group>"; };
 		E0AA6D6A1D87F8F4009D10C5 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AA6D771D87F8F4009D10C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0AA6D791D87F8F4009D10C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +74,8 @@
 		E0AA6D8E1D87F8F4009D10C5 /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AA6D921D87F8F4009D10C5 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		E0AA6D941D87F8F4009D10C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0BF8D991DBF71150036CDD8 /* BSRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSRecommendUser.h; sourceTree = "<group>"; };
+		E0BF8D9A1DBF71150036CDD8 /* BSRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSRecommendUser.m; sourceTree = "<group>"; };
 		E0CDF5CC1D913ADD001001E3 /* BSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSNavigationController.h; sourceTree = "<group>"; };
 		E0CDF5CD1D913ADD001001E3 /* BSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSNavigationController.m; sourceTree = "<group>"; };
 		E0E8C0D31D95342200437119 /* BSFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSFriendTrendsViewController.xib; sourceTree = "<group>"; };
@@ -93,6 +102,7 @@
 		E0EEAE091D8D7C5C0094847E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E0EEAE0B1D8D7C5C0094847E /* BSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBar.h; sourceTree = "<group>"; };
 		E0EEAE0C1D8D7C5C0094847E /* BSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTabBar.m; sourceTree = "<group>"; };
+		E0F314A91DBA13ED00014923 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +272,8 @@
 			children = (
 				E062A0D81DB0E3D200A3B2B2 /* BSRecommendType.h */,
 				E062A0D91DB0E3D200A3B2B2 /* BSRecommendType.m */,
+				E0BF8D991DBF71150036CDD8 /* BSRecommendUser.h */,
+				E0BF8D9A1DBF71150036CDD8 /* BSRecommendUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +284,9 @@
 				E081DBBA1DB4D68500ABFD60 /* BSRecommendTypeCell.h */,
 				E081DBBB1DB4D68500ABFD60 /* BSRecommendTypeCell.m */,
 				E081DBBC1DB4D68500ABFD60 /* BSRecommendTypeCell.xib */,
+				E0A0B9441DBD75BE00292AF2 /* BSRecommendUserCell.h */,
+				E0A0B9451DBD75BE00292AF2 /* BSRecommendUserCell.m */,
+				E0A0B9461DBD75BE00292AF2 /* BSRecommendUserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +367,7 @@
 				E0EEADFE1D8D7C5C0094847E /* AppDelegate.h */,
 				E0EEADFF1D8D7C5C0094847E /* AppDelegate.m */,
 				E0EEAE091D8D7C5C0094847E /* PrefixHeader.pch */,
+				E0F314A91DBA13ED00014923 /* Foundation+Log.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -505,6 +521,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A0B9481DBD75BE00292AF2 /* BSRecommendUserCell.xib in Resources */,
 				E0E8C0D91D957C0E00437119 /* BSRecommendViewController.xib in Resources */,
 				E0E8C0D41D95342200437119 /* BSFriendTrendsViewController.xib in Resources */,
 				E0AA6D7A1D87F8F4009D10C5 /* Assets.xcassets in Resources */,
@@ -586,6 +603,7 @@
 				E081DBBD1DB4D68500ABFD60 /* BSRecommendTypeCell.m in Sources */,
 				E0EEAE0D1D8D7C5C0094847E /* BSEssenceViewController.m in Sources */,
 				E0EEAE121D8D7C5C0094847E /* UIBarButtonItem+BSExtension.m in Sources */,
+				E0BF8D9B1DBF71150036CDD8 /* BSRecommendUser.m in Sources */,
 				E062A0DA1DB0E3D200A3B2B2 /* BSRecommendType.m in Sources */,
 				E0CDF5CE1D913ADD001001E3 /* BSNavigationController.m in Sources */,
 				E0EEAE0E1D8D7C5C0094847E /* BSFriendTrendsViewController.m in Sources */,
@@ -593,8 +611,10 @@
 				E0EEAE141D8D7C5C0094847E /* BSTabBarController.m in Sources */,
 				E0EEAE131D8D7C5C0094847E /* UIView+BSExtension.m in Sources */,
 				E0EEAE0F1D8D7C5C0094847E /* BSMeViewController.m in Sources */,
+				E0F314AA1DBA13ED00014923 /* Foundation+Log.m in Sources */,
 				E0EEAE151D8D7C5C0094847E /* main.m in Sources */,
 				E0EEAE161D8D7C5C0094847E /* BSTabBar.m in Sources */,
+				E0A0B9471DBD75BE00292AF2 /* BSRecommendUserCell.m in Sources */,
 				E0EEAE111D8D7C5C0094847E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

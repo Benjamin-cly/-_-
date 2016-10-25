@@ -18,6 +18,14 @@
 #import "UIView+BSExtension.h"
 #import "UIBarButtonItem+BSExtension.h"
 
+//自定义log
+#ifdef DEBUG
+#define BSLog(...) NSLog(__VA_ARGS__)
+#else
+#define BSLog(...)
+#endif
+
+
 //打印函数宏
 #define BSLogFunc NSLog(@"%s", __func__)
 
