@@ -18,8 +18,6 @@
 @interface BSRecommendViewController ()<UITableViewDataSource,UITableViewDelegate>
 /** 左边的类别数据*/
 @property (strong, nonatomic)NSArray *types;
-/** 右边的用户数据*/
-@property (strong, nonatomic)NSArray *users;
 /** 左边的类别表格*/
 @property (weak, nonatomic) IBOutlet UITableView *typeTableView;
 /** 右侧的用户表格*/
@@ -67,6 +65,9 @@ static NSString * const BSUserId = @"user";
         //刷新表格
         [self.typeTableView reloadData];
         
+        //默认选中首行
+        [self.typeTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [SVProgressHUD showErrorWithStatus:@"加载推荐信息失败!"];
     }];
@@ -79,7 +80,8 @@ static NSString * const BSUserId = @"user";
     if (tableView == self.typeTableView) {
         return self.types.count;
     }else{
-        return self.users.count;
+        BSRecommendType *t = self.types[self.typeTableView.indexPathForSelectedRow.row];
+        return t.users.count;
     }
 }
 
@@ -94,7 +96,8 @@ static NSString * const BSUserId = @"user";
         return cell;
     }else{
         BSRecommendUserCell *cell = [tableView dequeueReusableCellWithIdentifier:BSUserId];
-        cell.user = self.users[indexPath.row];
+        BSRecommendType *t = self.types[self.typeTableView.indexPathForSelectedRow.row];
+        cell.user = t.users[indexPath.row];
         return cell;
     }
 }
@@ -106,6 +109,10 @@ static NSString * const BSUserId = @"user";
 {
     BSRecommendType *type = self.types[indexPath.row];
     BSLog(@"-----%@",type.name);
+    
+    if (type.users.count) {
+        [self.userTableView reloadData];
+    }else{
     //发送请求,加载右侧数据
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"list";
@@ -116,8 +123,10 @@ static NSString * const BSUserId = @"user";
         BSLog(@"%@",downloadProgress);
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        self.users = [BSRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
+        NSArray *users = [BSRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        //添加当前数据添加到对应的用户数组中
+        [type.users addObjectsFromArray:users];
         //刷新右侧表格
         [self.userTableView reloadData];
         
@@ -125,6 +134,7 @@ static NSString * const BSUserId = @"user";
         BSLog(@"%@",error);
         
     }];
+    }
     
 }
 

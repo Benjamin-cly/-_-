@@ -18,6 +18,10 @@
 /** name */
 @property (nonatomic, copy)NSString *name;
 
+/** 所选类别对应的用户数据*/
+@property (strong, nonatomic)NSMutableArray *users;
+
+
 
 
 @end

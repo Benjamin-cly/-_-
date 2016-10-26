@@ -9,5 +9,12 @@
 #import "BSRecommendType.h"
 
 @implementation BSRecommendType
-
+/** 懒加载 users 数据*/
+-(NSMutableArray *)users
+{
+    if (!_users) {
+        self.users = [NSMutableArray array];
+    }
+    return _users;
+}
 @end
