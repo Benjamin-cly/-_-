@@ -20,6 +20,10 @@
 
 /** 所选类别对应的用户数据*/
 @property (strong, nonatomic)NSMutableArray *users;
+/** 总数 */
+@property (nonatomic, assign) NSInteger total;
+/** 当前页数 */
+@property (nonatomic, assign) NSInteger curren_page;
 
 
 

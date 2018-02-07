@@ -21,7 +21,7 @@
     //对所有NavigationBar  的appearance设置生效
     //UINavigationBar *bar = [UINavigationBar appearance];
     
-    //对导航栏在BSNavigationController 中， appearance的设置才回生效
+    //对导航栏在BSNavigationController 中， appearance的设置才会生效
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[BSNavigationController class]]];
     [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     
